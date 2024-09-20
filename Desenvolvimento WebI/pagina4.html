@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--Pagina referente a loja-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRM - Artes Visuais - Loja</title>
+    <style>
+        body {
+            background-color: rgb(207, 210, 210);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+        }
+
+        .logo img {
+            height: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #6f6767;
+    border-radius: 4px;
+}
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .imagem-arredondada {
+            border-radius: 15px 30px 45px 60px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        }
+
+        footer a {
+            color: rgb(220, 126, 11);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logobranca.png" alt="GRM Artes Visuais">
+            </a>
+            <h2>GRM - Artes Visuais</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pagina1.html">Quem somos</a></li>
+                <li><a href="pagina4.html">Loja</a></li>
+                <li><a href="pagina2.html">Feira</a></li>
+                <li><a href="pagina3.html">Aulas</a></li>
+                <li><a href="pagina5.html">Contato</a></li>
+                <li><a href="pinacoteca.html">Pinacoteca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="item">
+                <a href="pagina5.html">
+                    <img src="maquininha.png" style="width: 400px; height: 400px;" class="imagem-arredondada">
+                </a>
+                <h2>Contato do artista</h2>
+            </div>
+            <div class="item">
+                <h2>Acesse nossas lojas digitais</h2>
+                <a href="https://www.galeria9.com.br/galeria/artists/view/ID/44394/">
+                    <img src="galeria9.png" class="imagem-arredondada">
+                </a>
+                <a href="https://www.urbanarts.com.br/grm">
+                    <img src="urbanarts.png" class="imagem-arredondada">
+                </a>
+                <a href="https://www.colab55.com/@grmav">
+                    <img src="colab55.png" class="imagem-arredondada">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Lojas Online:</h3>
+        <a href="https://www.galeria9.com.br/galeria/artists/view/ID/44394/">Galeria 9</a>
+        <a href="https://www.urbanarts.com.br/grm">Urban Arts</a>
+        <a href="https://www.colab55.com/@grmav">Colab 55</a>
+    </footer>
+</body>
+</html>

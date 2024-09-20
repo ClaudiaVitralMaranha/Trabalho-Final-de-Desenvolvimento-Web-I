@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRM - Artes Visuais- Contato</title>
+    <style>
+        body {
+            background-color: rgb(207, 210, 210);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+.contact-section {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin: 20px;
+}
+
+.contact-image img {
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px; 
+}
+.contact-image img {
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px;
+}
+.contact-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+ }
+.contact-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.contact-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    color: black;
+    text-align: left;
+}
+
+        .logo img {
+            height: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #6f6767;
+    border-radius: 4px;
+}
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: rgb(207, 210, 210);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .item img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        }
+
+        footer a {
+            color: rgb(220, 126, 11);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logobranca.png" alt="GRM Artes Visuais">
+            </a>
+            <h2>GRM - Artes Visuais</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pagina1.html">Quem somos</a></li>
+                <li><a href="pagina4.html">Loja</a></li>
+                <li><a href="pagina2.html">Feira</a></li>
+                <li><a href="pagina3.html">Aulas</a></li>
+                <li><a href="pagina5.html">Contato</a></li>
+                <li><a href="pinacoteca.html">Pinacoteca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contato do Artista</h1>
+        <h3>Sua mensagem é muito importante para nós</h3>
+        <div class="contact-section">
+            <div class="contact-image">
+                
+                <img src="fotomensagem.png" alt="Mensagem">
+            </div>
+            <div class="contact-image">
+                <img src="teslabot.png" alt="Mensagem">
+            </div>
+            
+            <div class="contact-container">
+                <h2>Enviar uma mensagem</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <p id="message"></p>
+                </form>
+            </div>
+        </div>
+        
+            </form>
+        </div>
+        </div>
+        <div class="container">
+            <div class="item">
+                <h2>Whatsapp</h2>
+                <a href="https://wa.me/5532988268990">
+                    <img src="wpp.png" alt="Whatsapp">
+                </a>
+            </div>
+            <div class="item">
+                <h2>Instagram</h2>
+                <a href="https://www.instagram.com/grm.av/?hl=pt-br">
+                    <img src="insta.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="item">
+                <h2>Gmail</h2>
+                <a href="mailto:grm.avo@gmail.com">
+                    <img src="gmail.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h3>Lojas Online:</h3>
+        <a href="https://www.galeria9.com.br/galeria/artists/view/ID/44394/">Galeria 9</a>
+        <a href="https://www.urbanarts.com.br/grm">Urban Arts</a>
+        <a href="https://www.colab55.com/@grmav">Colab 55</a>
+    </footer>
+</body>
+</html>
